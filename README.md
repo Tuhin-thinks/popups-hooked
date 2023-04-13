@@ -17,3 +17,9 @@ npm start
 I have added some more feature to it, and it's a complete example with list item deletion confirmation.
 
 You are free to use it in your project. I hope it will help you !!
+
+---
+
+## This is how it works!
+
+![Hooked Popup GIF](/.images/hooked-popup.gif)
