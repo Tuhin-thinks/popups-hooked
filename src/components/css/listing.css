@@ -1,0 +1,43 @@
+.toolbar {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.toolbar .btn {
+    margin-right: 5px;
+}
+
+.active {
+    color: #3c8dbc;
+    background-color: #f5f5f5;
+    border-left: 5px solid #3c8dbc;
+    margin-left: -5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    color: white;
+}
+
+li a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
