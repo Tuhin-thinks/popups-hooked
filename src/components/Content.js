@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import useConfirm from "../hooks/confirmHook";
 import "./css/listing.css";
 
@@ -6,6 +6,7 @@ const Content = () => {
   const [items, setItems] = useState([]);
   const [selected, setSelected] = useState(null);
   const { isConfirmed } = useConfirm();
+  const itemsCumCountRef = useRef(0);
 
   const deleteSelected = async () => {
     // confirm delete by asking user
@@ -37,10 +38,11 @@ const Content = () => {
             setItems([
               ...items,
               {
-                id: items.length,
-                content: `Item ${items.length}`,
+                id: itemsCumCountRef.current + 1,
+                content: `Item ${itemsCumCountRef.current + 1}`,
               },
             ]);
+            itemsCumCountRef.current += 1;
           }}
         >
           <span>+</span>
